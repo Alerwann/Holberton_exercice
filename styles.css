@@ -1,0 +1,298 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
+article {
+  overflow-y: auto;
+  flex: 2;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.indbox {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 20px;
+  box-shadow: 0 0 50px 5px rgb(167, 40, 235);
+}
+
+.welcome h2 {
+  font-style: italic;
+}
+
+.intro {
+  background-color: rgba(255, 200, 200, 0.2);
+  text-align: left;
+}
+
+.instruction {
+  text-align: center;
+  align-items: center;
+  background-color: rgba(255, 100, 100, 0.09);
+}
+
+.instruction li {
+  text-align: left;
+}
+
+.code-one {
+  border: 2px solid black;
+  border-radius: 20% 80% 20% 80% / 30% 70% 30% 70%;
+  padding: 30px;
+  font-size: 17px;
+  color: rgba(245, 166, 40, 0);
+}
+
+.code-one:hover {
+  color: black;
+  cursor: not-allowed;
+}
+
+.map {
+  background-color: rgba(255, 50, 50, 0.075);
+  border-radius: 75px;
+  text-align: right;
+}
+
+.network {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  column-gap: 2%;
+  row-gap: 1%;
+}
+
+.network-title {
+  grid-column: 1/3;
+  line-height: 2;
+}
+
+.network h1,
+.network h5 {
+  font-family: 'Momo Signature', cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.network h1 {
+  text-align: center;
+}
+
+.network h2 {
+  text-align: center;
+}
+
+.box {
+  align-content: center;
+  align-items: center;
+  padding: 0 2%;
+  transition: 0.2s;
+  text-align: justify;
+  border-radius: 0% 100% 0% 100% / 100% 5% 95% 0%;
+}
+
+.box:hover {
+  transform: scale(1.02);
+}
+
+.youtube {
+  background-color: rgba(255, 100, 100, 0.5);
+}
+
+.youtube span {
+  opacity: 0;
+  color: white;
+  font-size: 50px;
+}
+
+.box:hover span {
+  opacity: 1;
+}
+
+.tiktok {
+  background-color: rgba(120, 255, 0, 0.5);
+}
+
+.tweeter {
+  background-color: rgba(39, 235, 245, 0.5);
+}
+
+.linkedin {
+  background-color: rgba(39, 53, 245, 0.5);
+}
+
+.past {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.card {
+  height: 100%;
+  perspective: 1000px;
+}
+
+.card_inner {
+  height: 100%;
+  transition: rotate 0.75s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.card_face {
+  position: absolute;
+  padding: 5%;
+  backface-visibility: hidden;
+  overflow-y: auto;
+}
+
+.back {
+  font-size: large;
+  text-align: justify;
+  line-height: 1.5em;
+  align-content: center;
+  align-items: center;
+  background-color: pink;
+  rotate: y 180deg;
+  height: 100%;
+}
+
+.front {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+}
+
+.card:hover .card_inner {
+  rotate: y 180deg;
+}
+
+.diplomes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 10px;
+}
+
+.containair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10%;
+  padding: 10px;
+}
+
+.contenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contenu ul {
+  flex: 1;
+  text-align: center;
+  list-style: none;
+  line-height: 1.5em;
+}
+
+.contenu img {
+  flex: 2;
+}
+
+.legende {
+  text-align: center;
+}
+
+.devmob {
+  position: relative;
+  
+}
+
+.devmob::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0 20px,
+    rgb(29, 29, 29) 1px 40px
+  );
+  opacity: 0.05;
+}
+
+.devweb {
+  background-color: rgb(0, 0, 255, 0.05);
+}
+
+.iaclass{
+  background: repeating-linear-gradient(
+    to right, 
+    rgba(255, 0, 0, 0.05) 0 25%,     
+    rgba(255, 255, 0, 0.05) 25% 50%, 
+    rgba(0, 128, 0, 0.05) 50% 75%,   
+    rgba(0, 0, 255, 0.05) 75% 100%   
+);
+}
+
+
+.add_class {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  transform: translate(-10%, -10%);
+  width: 90%;
+}
+
+
+
+input:invalid {
+  border: 2px solid red;
+  background-color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  border-radius: 49% 51% 100% 0% / 100% 100% 0% 0%;
+}
+.code_past span {
+  opacity: 0;
+}
+
+.code_past:hover span {
+  opacity: 100%;
+}
+
+.code_past {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

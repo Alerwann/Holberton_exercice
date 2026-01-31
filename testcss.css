@@ -1,0 +1,22 @@
+button {
+  background-color: red;
+  height: 80px;
+  width: 100px;
+  border: none;
+  color: black;
+}
+#false_button:hover {
+  opacity: 0;
+  height: 0;
+}
+
+#false_button {
+  cursor: help;
+}
+
+.centered-image {
+    position: fixed; /* ou absolute selon le parent */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

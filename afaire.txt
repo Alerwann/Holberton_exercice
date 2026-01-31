@@ -1,0 +1,10 @@
+-> certificat
+    ajouter un code caché
+    si clique n'importe ou tout en retrait
+->validation
+    faire la page
+    faire un code et le crypté
+    validation de l'énigme
+->disqus
+
+->socials
