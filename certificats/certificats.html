@@ -7,8 +7,10 @@
       href="https://apply.holbertonschool.com/level2/school.css"
       rel="stylesheet"
     />
-    <link href="styles.css" rel="stylesheet" />
-    <script src="behavior.js"></script>
+    <link href="../styles.css" rel="stylesheet" />
+    <link href="../testcss.css" rel="stylesheet" />
+    <link href="certif.css" rel="stylesheet" />
+    <script src="../js/behavior.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body class="works_on_smartphone">
@@ -34,25 +36,27 @@
             >Partager</a
           >
         </div>
-                  <a
-            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-            class="twitter-share-button"
-            data-show-count="false"
-            >Tweet</a
-          >
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
+        <a
+          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          class="twitter-share-button"
+          data-show-count="false"
+          >Tweet</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
       </div>
       <ul>
         <li class="logo">&#129399;</li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/past.html">Le passer</a></li>
-        <li><a href="/certificats.html">Mes certificats</a></li>
-        <li><a href="/tweets.html">Mes réseaux</a></li>
-        <li><a href="/validation.html">&#128272; Validation</a></li>
+        <li><a href="../">Home</a></li>
+        <li><a href="../past/past.html">Comment j'apprends</a></li>
+        <li><a href="../certificats/certificats.html">Mes certificats</a></li>
+        <li><a href="../reseaux/tweets.html">L'utilisation des réseaux</a></li>
+        <li>
+          <a href="../formulaire/validation.html">&#128272; Validation</a>
+        </li>
       </ul>
     </header>
     <main>
@@ -93,10 +97,14 @@
               <li>Django</li>
               <li>APIs</li>
             </ul>
-            <img
-              src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~2TVSQ6RKR77U/CERTIFICATE_LANDING_PAGE~2TVSQ6RKR77U.jpeg"
-              class="small to_change"
-            />
+            <div class="images" aria-describedby="devweb" name="devWeb">
+              <img
+                src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~2TVSQ6RKR77U/CERTIFICATE_LANDING_PAGE~2TVSQ6RKR77U.jpeg"
+                class="small to_change"
+              />
+
+              <div role="tooltip" id="devweb">Cliquer pour agrandir🔎</div>
+            </div>
           </div>
         </div>
 
@@ -110,14 +118,18 @@
               <li>Art of prompting</li>
               <li>Use AI responsibly</li>
             </ul>
-            <img
-              src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~YCOFTAOQI0KF/CERTIFICATE_LANDING_PAGE~YCOFTAOQI0KF.jpeg"
-              class="small to_change"
-            />
+            <div class="images"  aria-describedby="iaclass" name="iaclass">
+              <img
+                src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~YCOFTAOQI0KF/CERTIFICATE_LANDING_PAGE~YCOFTAOQI0KF.jpeg"
+                class="small to_change"
+              />
+              <div role="tooltip" id="iaclass">🔎D5🔎</div>
+            </div>
           </div>
         </div>
       </article>
-      <aside>  <div id="disqus_thread"></div>
+      <aside>
+        <div id="disqus_thread"></div>
         <script>
           var disqus_config = function () {
             this.page.url = "http://127.0.0.1:5500/";
@@ -136,7 +148,8 @@
           <a href="https://disqus.com/?ref_noscript"
             >comments powered by Disqus.</a
           ></noscript
-        ></aside>
+        >
+      </aside>
     </main>
     <footer>
       <p>

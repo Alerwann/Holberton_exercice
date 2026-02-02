@@ -14,9 +14,5 @@ button {
   cursor: help;
 }
 
-.centered-image {
-    position: fixed; /* ou absolute selon le parent */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
+

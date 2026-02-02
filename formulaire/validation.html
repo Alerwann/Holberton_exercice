@@ -7,11 +7,12 @@
       href="https://apply.holbertonschool.com/level2/school.css"
       rel="stylesheet"
     />
-    <link href="styles.css" rel="stylesheet" />
-    <link href="testcss.css" rel="stylesheet" />
+    <link href="../styles.css" rel="stylesheet" />
+    <link href="../testcss.css" rel="stylesheet" />
+    <link href="validation.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="behavior.js"></script>
-    <script src="form.js"></script>
+    <script src="../js/behavior.js"></script>
+    <script src="../js/form.js"></script>
   </head>
   <body class="works_on_smartphone">
     <div id="fb-root"></div>
@@ -51,27 +52,30 @@
       <ul>
         <li class="logo">&#129399;</li>
         <li><a href="/">Home</a></li>
-        <li><a href="/past.html">Le passer</a></li>
-        <li><a href="/certificats.html">Mes certificats</a></li>
-        <li><a href="/tweets.html">Mes réseaux</a></li>
-        <li><a href="/validation.html">&#128272; Validation</a></li>
+        <li><a href="../past/past.html">Comment j'apprends</a></li>
+        <li><a href="../certificats/certificats.html">Mes certificats</a></li>
+        <li><a href="../reseaux/tweets.html">L'utilisation des réseaux</a></li>
+        <li><a href="../formulaire/validation.html">&#128272; Validation</a></li>
       </ul>
     </header>
     <main>
       <article>
-        <form>
-          <label for="answer">Quel est le code?</label>
-          <input type="text" name="answer" id="answer" />
-          <button id="false_button" disabled>TEST</button>
-          <button class="true_button" id="good_button">VAlide</button>
-        </form>
-        <img
-          src="https://github.com/Alerwann/essaie/blob/main/img1.jpg?raw=true"
-          id="win_img"
-          class="hidden"
-          height="100"
-          width="200"
-        />
+        <div id="container-form">
+          <form>
+            <label for="answer">Quel est le code?</label>
+            <input type="text" name="answer" id="answer" />
+            <button id="false_button" disabled>TEST</button>
+            <button class="true_button" id="good_button">VAlide</button>
+          </form>
+ 
+          <img
+            src="https://github.com/Alerwann/essaie/blob/main/img1.jpg?raw=true"
+            id="win_img"
+            class="hidden"
+            height="100"
+            width="200"
+          />
+        </div>
       </article>
       <aside>
         <div id="disqus_thread"></div>
